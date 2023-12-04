@@ -46,7 +46,6 @@ public class VillaAPIController : Controller
         }
         return Ok(villa);
     }
-
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status201Created)]
