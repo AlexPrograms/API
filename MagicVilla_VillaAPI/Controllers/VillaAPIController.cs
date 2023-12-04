@@ -16,8 +16,9 @@ public class VillaAPIController : Controller
         return Ok(VillaStore.villaList);
     }
     
-    [HttpGet("{id:int}")]
+    [HttpGet("{id:int}", Name = "GetVilla")]
     [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public ActionResult<VillaDTO> GetVilla(int id)
@@ -34,4 +35,29 @@ public class VillaAPIController : Controller
         }
         return Ok(villa);
     }
+
+    [HttpPost]
+    public ActionResult<VillaDTO> CreateVilla([FromBody]VillaDTO villaDto)
+    {
+        if (VillaStore.villaList.FirstOrDefault(u=>u.Name.ToLower()==villaDto.Name.ToLower()) != null)
+        {
+            ModelState.AddModelError("CustomError","Villa already Exists!");
+            return BadRequest(ModelState);
+        }
+        if (villaDto == null)
+        {
+            return BadRequest(villaDto);
+        }
+
+        if (villaDto.Id >0)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError);
+        }
+
+        villaDto.Id = VillaStore.villaList.OrderByDescending(u => u.Id).FirstOrDefault().Id + 1;
+        VillaStore.villaList.Add(villaDto);
+        return CreatedAtRoute("GetVilla", new { id = villaDto.Id }, villaDto);
+    }
+    
+    
 }
