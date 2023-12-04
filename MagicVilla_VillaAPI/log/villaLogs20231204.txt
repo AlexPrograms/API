@@ -1,0 +1,38 @@
+2023-12-04 14:26:05.367 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-04 14:26:05.428 +01:00 [DBG] Hosting starting
+2023-12-04 14:26:05.468 +01:00 [INF] Now listening on: http://localhost:5164
+2023-12-04 14:26:05.468 +01:00 [DBG] Loaded hosting startup assembly MagicVilla_VillaAPI
+2023-12-04 14:26:05.468 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 14:26:05.469 +01:00 [INF] Hosting environment: Development
+2023-12-04 14:26:05.469 +01:00 [INF] Content root path: D:\learning\programming\С#\API\MagicVilla_VillaAPI\MagicVilla_VillaAPI
+2023-12-04 14:26:05.469 +01:00 [DBG] Hosting started
+2023-12-04 14:26:05.567 +01:00 [DBG] Connection id "0HMVKPI8OV9CH" received FIN.
+2023-12-04 14:26:05.572 +01:00 [DBG] Connection id "0HMVKPI8OV9CH" accepted.
+2023-12-04 14:26:05.573 +01:00 [DBG] Connection id "0HMVKPI8OV9CH" started.
+2023-12-04 14:26:05.581 +01:00 [DBG] Connection id "0HMVKPI8OV9CH" sending FIN because: "The client closed the connection."
+2023-12-04 14:26:05.582 +01:00 [DBG] Connection id "0HMVKPI8OV9CH" disconnecting.
+2023-12-04 14:26:05.585 +01:00 [DBG] Connection id "0HMVKPI8OV9CH" stopped.
+2023-12-04 14:26:05.722 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" accepted.
+2023-12-04 14:26:05.722 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" started.
+2023-12-04 14:26:05.723 +01:00 [DBG] Connection id "0HMVKPI8OV9CJ" accepted.
+2023-12-04 14:26:05.723 +01:00 [DBG] Connection id "0HMVKPI8OV9CJ" started.
+2023-12-04 14:26:05.813 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/index.html - -
+2023-12-04 14:26:05.821 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-04 14:26:05.850 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-12-04 14:26:05.851 +01:00 [DBG] Request did not match any endpoints
+2023-12-04 14:26:06.056 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" completed keep alive response.
+2023-12-04 14:26:06.057 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/index.html - - - 200 - text/html;charset=utf-8 248.1630ms
+2023-12-04 14:26:06.509 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - -
+2023-12-04 14:26:06.509 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-12-04 14:26:06.509 +01:00 [DBG] Request did not match any endpoints
+2023-12-04 14:26:06.745 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" completed keep alive response.
+2023-12-04 14:26:06.746 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.0921ms
+2023-12-04 14:26:24.316 +01:00 [INF] Application is shutting down...
+2023-12-04 14:26:24.317 +01:00 [DBG] Hosting stopping
+2023-12-04 14:26:24.324 +01:00 [DBG] Connection id "0HMVKPI8OV9CJ" disconnecting.
+2023-12-04 14:26:24.324 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" disconnecting.
+2023-12-04 14:26:24.325 +01:00 [DBG] Connection id "0HMVKPI8OV9CJ" stopped.
+2023-12-04 14:26:24.325 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" stopped.
+2023-12-04 14:26:24.325 +01:00 [DBG] Connection id "0HMVKPI8OV9CJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-04 14:26:24.325 +01:00 [DBG] Connection id "0HMVKPI8OV9CI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-04 14:26:24.330 +01:00 [DBG] Hosting stopped
